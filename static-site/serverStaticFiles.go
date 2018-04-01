@@ -7,9 +7,9 @@ import (
 
 func main() {
 	// Informe o diretório onde estão os arquivos estáticos.
-	fs := http.FileServer(http.Dir("/home/joe/myfilesStatic"))
+	fs := http.FileServer(http.Dir("/home/william/Downloads/KMS"))
 
-	http.Handle("/", fs)
+	http.Handle("/home/william/Downloads/KMS/", fs)
 
 	log.Println("Listening...")
 
